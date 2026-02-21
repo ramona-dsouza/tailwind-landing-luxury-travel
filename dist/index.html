@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Atelier Travel | Bespoke Luxury Concierge</title>
+    <meta
+      name="description"
+      content="Aurelia Atelier crafts bespoke travel for clients who expect discretion, depth, and precision. Private itineraries, curated access, and a white-glove concierge team."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header class="relative z-20 border-b border-ink/10 bg-ivory/95 backdrop-blur">
+      <nav class="container flex items-center justify-between py-6" aria-label="Primary">
+        <a href="#" class="flex items-center gap-3">
+          <span
+            class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/20 bg-ivory text-[0.65rem] font-semibold tracking-[0.35em] text-ink"
+          >
+            AA
+          </span>
+          <span class="font-display text-base uppercase tracking-[0.35em] text-ink">
+            Aurelia Atelier
+          </span>
+        </a>
+
+        <div class="hidden items-center gap-10 text-xs uppercase tracking-[0.26em] md:flex">
+          <a class="nav-link focus-ring" href="#journeys">Journeys</a>
+          <a class="nav-link focus-ring" href="#process">Process</a>
+          <a class="nav-link focus-ring" href="#personalization">Personalization</a>
+          <a class="nav-link focus-ring" href="#concierge">Concierge</a>
+        </div>
+
+        <div class="hidden items-center gap-4 md:flex">
+          <a class="btn-secondary focus-ring" href="#journeys">Explore Journeys</a>
+          <a class="btn-primary focus-ring" href="#concierge">Request an Itinerary</a>
+        </div>
+
+        <button
+          id="menu-btn"
+          class="focus-ring inline-flex h-12 w-12 items-center justify-center rounded-full border border-ink/20 text-ink md:hidden"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="sr-only">Open menu</span>
+          <span class="flex h-5 w-6 flex-col justify-between">
+            <span class="block h-px w-full bg-ink"></span>
+            <span class="block h-px w-full bg-ink"></span>
+            <span class="block h-px w-full bg-ink"></span>
+          </span>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden" aria-hidden="true">
+        <div class="container pb-6">
+          <div class="rounded-2xl border border-ink/10 bg-ivory/95 p-6 shadow-soft">
+            <div class="flex flex-col gap-4 text-xs uppercase tracking-[0.26em]">
+              <a class="nav-link focus-ring" href="#journeys" data-nav-link>Journeys</a>
+              <a class="nav-link focus-ring" href="#process" data-nav-link>Process</a>
+              <a class="nav-link focus-ring" href="#personalization" data-nav-link>Personalization</a>
+              <a class="nav-link focus-ring" href="#concierge" data-nav-link>Concierge</a>
+            </div>
+            <div class="mt-6 flex flex-col gap-3">
+              <a class="btn-secondary focus-ring w-full text-center" href="#journeys" data-nav-link>
+                Explore Journeys
+              </a>
+              <a class="btn-primary focus-ring w-full text-center" href="#concierge" data-nav-link>
+                Request an Itinerary
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="hero" class="relative overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2000&q=80"
+            alt=""
+            aria-hidden="true"
+            class="h-full w-full object-cover"
+            width="2000"
+            height="1200"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="absolute inset-0 bg-ink/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/40 to-ivory/90"></div>
+
+        <div class="relative container py-section-lg">
+          <div class="max-w-2xl">
+            <p class="eyebrow text-ivory/80">Private travel concierge</p>
+            <h1 class="mt-6 text-display text-ivory">
+              Bespoke journeys shaped for the rare, the discreet, and the extraordinary.
+            </h1>
+            <p class="mt-6 text-lg text-ivory/80">
+              Aurelia Atelier curates immersive travel experiences with trusted partners, private
+              access, and a dedicated concierge team that moves at your pace.
+            </p>
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <a class="btn-primary focus-ring" href="#concierge">Request an Itinerary</a>
+              <a class="btn-secondary-light focus-ring" href="#journeys">Explore Journeys</a>
+            </div>
+            <div class="mt-12 grid grid-cols-2 gap-6 text-xs uppercase tracking-[0.26em] text-ivory/70 sm:grid-cols-3">
+              <div class="flex flex-col gap-2">
+                <span>Global network</span>
+                <span class="text-sm text-ivory/90">120+ partners</span>
+              </div>
+              <div class="flex flex-col gap-2">
+                <span>Availability</span>
+                <span class="text-sm text-ivory/90">24/7 concierge</span>
+              </div>
+              <div class="flex flex-col gap-2">
+                <span>Access</span>
+                <span class="text-sm text-ivory/90">Private invitations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="bg-ivory py-section" aria-labelledby="process-title">
+        <div class="container grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+          <div>
+            <p class="eyebrow">Bespoke process</p>
+            <h2 id="process-title" class="mt-4 text-headline">
+              Three movements from vision to voyage.
+            </h2>
+            <p class="mt-6 text-base text-smoke">
+              Each itinerary begins with a private consultation, then unfolds through a precise
+              design process and meticulous execution, supported by our white-glove team.
+            </p>
+          </div>
+          <ol class="space-y-6">
+            <li class="card">
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-ivory">
+                  01
+                </span>
+                <div>
+                  <h3 class="text-lg">Consultation</h3>
+                  <p class="mt-2 text-sm">
+                    We map your pace, preferences, and purpose to shape the guiding narrative.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-ivory">
+                  02
+                </span>
+                <div>
+                  <h3 class="text-lg">Design</h3>
+                  <p class="mt-2 text-sm">
+                    We curate stays, private access, and experiences with meticulous attention to detail.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="flex items-center gap-4">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-ivory">
+                  03
+                </span>
+                <div>
+                  <h3 class="text-lg">Concierge</h3>
+                  <p class="mt-2 text-sm">
+                    On the ground, we handle every detail so the journey remains effortless.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="journeys" class="bg-sand py-section" aria-labelledby="journeys-title">
+        <div class="container">
+          <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="eyebrow">Curated journeys</p>
+              <h2 id="journeys-title" class="mt-4 text-headline">
+                Signature destinations, deeply considered.
+              </h2>
+            </div>
+            <a class="btn-secondary focus-ring hidden md:inline-flex" href="#concierge">
+              Request a private brief
+            </a>
+          </div>
+
+          <div class="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+            <article class="group">
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                  alt="Misty mountain ridges at sunrise"
+                  class="h-56 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="mt-4">
+                <h3 class="text-lg">Patagonian Silence</h3>
+                <p class="mt-2 text-sm">Glacial lodges, private guides, and heli-access wilderness.</p>
+              </div>
+            </article>
+
+            <article class="group">
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80"
+                  alt="Evening streets of Kyoto with lanterns"
+                  class="h-56 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="mt-4">
+                <h3 class="text-lg">Kyoto After Hours</h3>
+                <p class="mt-2 text-sm">Temple access, artisan encounters, and hushed gardens.</p>
+              </div>
+            </article>
+
+            <article class="group">
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+                  alt="Warm desert dunes under a soft sky"
+                  class="h-56 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="mt-4">
+                <h3 class="text-lg">Sahara By Starlight</h3>
+                <p class="mt-2 text-sm">Private camps, astronomers, and dawn-to-dusk caravans.</p>
+              </div>
+            </article>
+
+            <article class="group">
+              <div class="overflow-hidden rounded-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+                  alt="Sunlit coastline with cliffs and sea"
+                  class="h-56 w-full object-cover transition duration-500 motion-safe:group-hover:scale-105"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="mt-4">
+                <h3 class="text-lg">Amalfi By Sea</h3>
+                <p class="mt-2 text-sm">Private yachts, culinary ateliers, and cliffside suites.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="personalization" class="bg-ivory py-section" aria-labelledby="personalization-title">
+        <div class="container grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+          <div>
+            <p class="eyebrow">Personalization</p>
+            <h2 id="personalization-title" class="mt-4 text-headline">
+              White-glove service, tailored to your rhythm.
+            </h2>
+            <p class="mt-6 text-base text-smoke">
+              We balance intuition with precision. Every recommendation is tuned to your cadence,
+              every detail layered to feel seamless. No templates. No compromises.
+            </p>
+            <ul class="mt-6 space-y-4 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-bronze"></span>
+                <span>Dedicated concierge lead and local on-the-ground teams.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-bronze"></span>
+                <span>Private access to cultural institutions, villas, and events.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 h-2 w-2 rounded-full bg-bronze"></span>
+                <span>Real-time itinerary refinement as preferences evolve.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-3xl border border-ink/10 bg-sand p-8 shadow-soft">
+            <p class="eyebrow text-ink/70">Signature promise</p>
+            <h3 class="mt-4 text-title">Elegance in every detail.</h3>
+            <p class="mt-4 text-sm">
+              From private air itineraries to after-hours access, we orchestrate travel that feels
+              effortless, exclusive, and entirely yours.
+            </p>
+            <div class="mt-8 flex flex-col gap-4 text-sm uppercase tracking-[0.26em] text-ink/70">
+              <div class="flex items-center justify-between border-b border-ink/10 pb-3">
+                <span>Access</span>
+                <span class="text-ink">Invite-only</span>
+              </div>
+              <div class="flex items-center justify-between border-b border-ink/10 pb-3">
+                <span>Response</span>
+                <span class="text-ink">Within 2 hours</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>Coverage</span>
+                <span class="text-ink">Global</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="bg-sand py-section" aria-labelledby="testimonials-title">
+        <div class="container">
+          <div class="max-w-2xl">
+            <p class="eyebrow">Testimonials</p>
+            <h2 id="testimonials-title" class="mt-4 text-headline">
+              Trusted by families, founders, and cultural leaders.
+            </h2>
+          </div>
+
+          <div class="mt-10 grid gap-8 md:grid-cols-3">
+            <figure class="card">
+              <blockquote class="text-sm">
+                "Aurelia Atelier anticipated every nuance. We felt cared for without ever needing to ask."
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-3 text-xs uppercase tracking-[0.26em] text-ink/70">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-ivory">
+                  EL
+                </span>
+                <span>
+                  Elena Laurent
+                  <span class="block text-[0.7rem] tracking-[0.2em] text-smoke">Collector</span>
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <blockquote class="text-sm">
+                "Every handoff was flawless. The quiet confidence of their team is unmatched."
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-3 text-xs uppercase tracking-[0.26em] text-ink/70">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-ivory">
+                  JM
+                </span>
+                <span>
+                  Julian Moreau
+                  <span class="block text-[0.7rem] tracking-[0.2em] text-smoke">Private Equity</span>
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <blockquote class="text-sm">
+                "They understood our aesthetic instantly. The journey felt like a film we were living."
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-3 text-xs uppercase tracking-[0.26em] text-ink/70">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-semibold text-ivory">
+                  SR
+                </span>
+                <span>
+                  Sofia Ramirez
+                  <span class="block text-[0.7rem] tracking-[0.2em] text-smoke">Creative Director</span>
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="concierge" class="bg-ivory py-section" aria-labelledby="concierge-title">
+        <div class="container grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+          <div>
+            <p class="eyebrow">Concierge lead</p>
+            <h2 id="concierge-title" class="mt-4 text-headline">
+              Request your private itinerary.
+            </h2>
+            <p class="mt-6 text-base text-smoke">
+              Share a few details and our lead concierge will respond within two hours to begin the
+              discovery process.
+            </p>
+            <div class="mt-8 space-y-4 text-sm">
+              <div class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-bronze"></span>
+                <span>Discrete planning, NDA available on request.</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="h-2 w-2 rounded-full bg-bronze"></span>
+                <span>Global access across 70+ destinations.</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="rounded-3xl border border-ink/10 bg-ivory p-8 shadow-soft">
+            <div class="grid gap-6">
+              <div>
+                <label class="form-label" for="full-name">Full name</label>
+                <input
+                  class="form-input focus-ring"
+                  id="full-name"
+                  name="full-name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div>
+                <label class="form-label" for="email">Email address</label>
+                <input
+                  class="form-input focus-ring"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div>
+                <label class="form-label" for="destination">Preferred destination</label>
+                <input
+                  class="form-input focus-ring"
+                  id="destination"
+                  name="destination"
+                  type="text"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="grid gap-6 md:grid-cols-2">
+                <div>
+                  <label class="form-label" for="travel-window">Travel window</label>
+                  <input
+                    class="form-input focus-ring"
+                    id="travel-window"
+                    name="travel-window"
+                    type="text"
+                    placeholder="e.g. June 2026"
+                  />
+                </div>
+                <div>
+                  <label class="form-label" for="guests">Guests</label>
+                  <input
+                    class="form-input focus-ring"
+                    id="guests"
+                    name="guests"
+                    type="number"
+                    min="1"
+                    placeholder="2"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="form-label" for="details">Additional preferences</label>
+                <textarea
+                  class="form-input focus-ring min-h-[120px]"
+                  id="details"
+                  name="details"
+                  rows="4"
+                  placeholder="Cuisine, pace, wellness, art, celebrations, or special access."
+                ></textarea>
+              </div>
+              <button class="btn-primary focus-ring w-full" type="submit">Request an Itinerary</button>
+              <p class="text-xs text-smoke">
+                By submitting, you agree to be contacted by our concierge team.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-ink/10 bg-ivory">
+      <div class="container flex flex-col gap-8 py-12 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="font-display text-lg uppercase tracking-[0.28em] text-ink">Aurelia Atelier</p>
+          <p class="mt-2 text-sm text-smoke">Private travel concierge, global.</p>
+        </div>
+        <div class="flex flex-col gap-3 text-xs uppercase tracking-[0.24em] text-ink/70 md:flex-row md:items-center">
+          <a class="nav-link focus-ring" href="#journeys">Journeys</a>
+          <a class="nav-link focus-ring" href="#process">Process</a>
+          <a class="nav-link focus-ring" href="#concierge">Concierge</a>
+        </div>
+        <p class="text-xs uppercase tracking-[0.24em] text-ink/60">2026 Aurelia Atelier. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
