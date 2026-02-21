@@ -1,35 +1,43 @@
-# Aurelia Atelier Travel Landing Page
+# Aurelia Atelier Travel Landing System
+
+Live Demo  
+[https://ramona-dsouza.github.io/tailwind-landing-luxury-travel/](https://ramona-dsouza.github.io/tailwind-landing-luxury-travel/)
+
+## Lighthouse Scores (Desktop)
+
+Performance: 78  
+Accessibility: 100  
+Best Practices: 96  
+SEO: 100  
+
+Measured via Chrome Lighthouse in navigation mode. Performance score reflects high-resolution hero imagery typical of luxury brand experiences.
+
+![Preview](./docs/preview.webp)
 
 ## Overview
 
-Refactored a legacy static Tailwind project into a 2026-ready luxury travel concierge landing page with editorial typography, restrained motion, and production-grade accessibility.
+Production-grade luxury travel concierge landing page rebuilt from a legacy static Tailwind project. Designed to reflect an ultra-premium editorial aesthetic while meeting modern standards for accessibility, performance, and deployment simplicity.
 
 ## Problem Context
 
-The original site was branded for plumbing with legacy animation assets and unused dependencies. The goal was to rebuild as an ultra-luxury bespoke travel agency while preserving the Tailwind CLI workflow and keeping the project static for GitHub Pages.
+The original repository was a plumbing-branded tutorial project with legacy animation assets, unused dependencies, and limited structural rigor. The objective was to transform it into a bespoke luxury travel experience while preserving a static Tailwind CLI workflow suitable for GitHub Pages deployment. The refactor prioritized modernization, architectural clarity, and production readiness rather than cosmetic redesign.
 
 ## Architectural Approach
 
-Kept the build simple: semantic HTML, Tailwind CLI, and a small progressive JavaScript enhancement for the mobile menu. The layout relies on a tokenized design system in `tailwind.config.js` and component abstractions in `input.css` to control typography, spacing, and visual rhythm without class bloat.
+Static HTML and Tailwind CLI to maximize portability and code transparency. Tokenized design system defined in tailwind.config.js. Semantic HTML5 structure with strict heading hierarchy. Mobile-first responsive grid system. Progressive enhancement for interactive elements. GitHub Pages deployment via the docs folder.
 
 ## Key Technical Decisions
 
-- **Static + Tailwind CLI**: Chosen to maximize simplicity, portability, and GitHub Pages compatibility while maintaining a modern design system.
-- **Design tokens in config**: Added a curated palette, type scale, and spacing scale to keep the visual language consistent.
-- **CSS-first Tailwind v4 setup**: `input.css` uses the modern Tailwind import and config directive for predictable builds.
-- **Minimal JS**: Only the mobile nav toggle uses JavaScript; everything else is purely semantic HTML and CSS.
-- **Performance-first assets**: Hero image uses `fetchpriority="high"`, non-critical images are lazy-loaded, and dimensions are set to prevent layout shift.
+- Static-first architecture. Avoided frameworks intentionally to emphasize deploy simplicity, performance, and inspectability.
+- Design tokens in configuration. Centralized color palette, typography scale, and spacing rhythm for consistency.
+- Minimal JavaScript. JavaScript is limited to the mobile navigation toggle. All motion and layout rely on CSS.
+- Performance-conscious assets. Hero image uses fetch priority, non-critical images are lazy-loaded, and explicit dimensions prevent layout shift.
+- Accessibility baseline. Skip link, labeled inputs, visible focus states, ARIA only where required, and prefers-reduced-motion compliance.
 
 ## Edge Case Handling
 
-- **Accessibility**: Skip link, proper heading hierarchy, labeled form controls, visible focus rings, and aria attributes for the mobile menu.
-- **Reduced motion**: All transitions respect `prefers-reduced-motion` at the CSS level.
-- **Responsive layout**: Mobile-first grid and spacing ensure the layout stays readable and balanced on small screens.
-- **Form resilience**: Input types, autocomplete, and required fields reduce submission errors.
+Long destination names and testimonial content. Small viewport heights and narrow devices. No-JavaScript fallback behavior. Reduced motion support. Form input resilience through proper types and autocomplete attributes.
 
 ## Skills Demonstrated
 
-- Information architecture and UX writing for premium brand voice
-- Tailwind design system refactoring and component hygiene
-- Accessibility-first HTML and progressive enhancement
-- Performance-minded asset loading and layout stability
+Design-to-code translation for premium brand experiences. Tailwind design system structuring and refactoring. Accessibility-first semantic markup. Performance optimization and layout stability. Production deployment workflow via GitHub Pages.
